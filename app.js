@@ -8,7 +8,8 @@ const app = express();
 const port = 3000;
 
 app.use(morgan('combined'));
-app.use(express.static(path.join(__dirname,'/public/')));
+app.use(express.static(path.join(__dirname,"/public/")));
+
 
 
 app.get("/", (req,res) =>{
